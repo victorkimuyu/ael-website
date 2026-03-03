@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════
+   AEL Brand Design Tokens — Tailwind v4 Theme
+   ══════════════════════════════════════════════ */
+@theme {
+    /* Brand Colors */
+    --color-primary: #2f2573;
+    --color-accent: #00ccfa;
+    --color-action: #e70036;
+    --color-action-hover: #c40a2c;
+
+    /* Surface & Text Colors */
+    --color-heading: #484857;
+    --color-body: #252530;
+    --color-dark: #171d3d;
+
+    /* Fonts */
+    --font-display: 'IntelOne Display', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: 'IntelOne Text', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-body: 'IntelOne Text', ui-sans-serif, system-ui, sans-serif;
+    --font-nav: 'iA Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-stats: 'Scania Sans Headline', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ══════════════════════════════════════════════
+   @font-face Declarations
+   ══════════════════════════════════════════════ */
+
+/* IntelOne Display — Headlines & Hero Text */
+@font-face {
+    font-family: 'IntelOne Display';
+    src: url('../../static/fonts/IntelOne/intelone-display-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Display';
+    src: url('../../static/fonts/IntelOne/intelone-display-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* IntelOne Text — Nav, buttons, UI text */
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../../static/fonts/IntelOne/intelone-text-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../../static/fonts/IntelOne/intelone-text-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* iA Sans — Navigation text */
+@font-face {
+    font-family: 'iA Sans';
+    src: url('../../static/fonts/iASans-TextC.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Scania Sans — Stats numbers */
+@font-face {
+    font-family: 'Scania Sans Headline';
+    src: url('../../static/fonts/ScaniaSans-Headline.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

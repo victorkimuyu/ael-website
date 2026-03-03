@@ -1,25 +1,1527 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="We offer long distance cargo transport services from the Mombasa port into Kenya and cross-border transit into the East African Market">
-    <meta name="keywords" content="" >
-    <title>AEL - Our solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEL - Awale Enterprises Ltd | Premier East African Logistics</title>
+    <meta name="description"
+        content="Awale Enterprises Limited – ISO 9001:2015 certified road freight transport across East Africa. Containerized cargo, petroleum, project logistics and more.">
+    <link rel="stylesheet" href="./static/css/global.css">
+    <style>
+        /* Dropdown entrance animation */
+        @keyframes dropdown-in {
+            from {
+                opacity: 0;
+                transform: translateY(-4px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .group:hover .dropdown-panel {
+            animation: dropdown-in 0.2s ease-out forwards;
+        }
+
+        /* ── Hero Slider Animations ── */
+        @keyframes hero-fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes hero-fade-out {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes hero-text-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes hero-text-fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes hero-zoom {
+            from {
+                transform: scale(1.05);
+            }
+
+            to {
+                transform: scale(1.15);
+            }
+        }
+
+        @keyframes progress-fill {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .hero-slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-slide.active .hero-bg {
+            animation: hero-zoom 7s ease-out forwards;
+        }
+
+        .hero-slide.active .hero-badge {
+            animation: hero-text-fade 0.6s 0.2s ease-out both;
+        }
+
+        .hero-slide.active .hero-title {
+            animation: hero-text-up 0.7s 0.3s ease-out both;
+        }
+
+        .hero-slide.active .hero-desc {
+            animation: hero-text-up 0.7s 0.5s ease-out both;
+        }
+
+        .hero-slide.active .hero-ctas {
+            animation: hero-text-up 0.7s 0.7s ease-out both;
+        }
+
+        .progress-bar {
+            animation: progress-fill linear forwards;
+        }
+
+        .progress-bar.paused {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
-<body>
-<header>
-    <div>
-        <img src="./static/images/ael-logo.svg" alt=""> <!-- Logo -->
+
+<body class="font-body antialiased text-slate-800 bg-slate-50">
+
+    <!-- ═══ Brand accent line — thin red/primary gradient at very top ═══ -->
+    <div class="h-0.5 bg-gradient-to-r from-action via-primary to-accent"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TOP CONTACT STRIP — scrolls away with the page
+         ═══════════════════════════════════════════════════════════ -->
+    <div id="top-strip" class="bg-dark text-white text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
+            <!-- Left: Phone & Email -->
+            <div class="flex items-center gap-5">
+                <a href="tel:+254735535458"
+                    class="flex items-center gap-1.5 text-slate-300 hover:text-accent transition-colors duration-200">
+                    <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                        </path>
+                    </svg>
+                    <span class="hidden sm:inline">+254 735 535 458</span>
+                </a>
+                <span class="hidden sm:block w-px h-3 bg-white/20"></span>
+                <a href="mailto:info@ael.co.ke"
+                    class="flex items-center gap-1.5 text-slate-300 hover:text-accent transition-colors duration-200">
+                    <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    <span class="hidden sm:inline">info@ael.co.ke</span>
+                </a>
+            </div>
+            <!-- Right: ISO badge -->
+            <div class="hidden md:flex items-center gap-1.5 text-accent/90  tracking-wide">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                    </path>
+                </svg>
+                ISO 9001:2015 Certified
+            </div>
+        </div>
     </div>
-    <nav>
-        <!-- Nav with collapsible variant for mobile devices -->
-    </nav>
-</header>
-<main></main>
-<footer></footer>
-<script src="./static/js/main.js"></script> <!-- All interactivity goes here -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MAIN NAVIGATION — sticks to top on scroll
+         ═══════════════════════════════════════════════════════════ -->
+    <header id="main-nav"
+        class="font-nav sticky top-0 z-50 bg-white border-b border-slate-200/70 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-[72px]">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 group">
+                    <img class="h-10 lg:h-11 w-auto transition-transform duration-200 group-hover:scale-105"
+                        src="./static/images/AEL_Logo.svg" alt="AEL Logo">
+                </a>
+
+                <!-- ─── Desktop Navigation ─── -->
+                <nav class="hidden lg:flex items-center gap-0.5" id="desktop-nav">
+
+                    <!-- Home -->
+                    <a href="index.html"
+                        class="relative px-4 py-2 text-sm  text-primary transition-colors duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-6 after:h-0.5 after:bg-action after:rounded-full">
+                        Home
+                    </a>
+
+                    <!-- Solutions (Dropdown) -->
+                    <div class="relative group" id="solutions-dropdown">
+                        <button type="button"
+                            class="inline-flex items-center gap-1 px-4 py-2 text-sm  text-slate-600 hover:text-primary transition-colors duration-200"
+                            aria-expanded="false" aria-haspopup="true">
+                            Solutions
+                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary transition-all duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Panel -->
+                        <div
+                            class="dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div
+                                class="w-[320px] bg-white rounded-xl shadow-2xl shadow-slate-900/10 border border-slate-100 p-2 ring-1 ring-black/[0.03]">
+                                <!-- Solutions Header -->
+                                <div class="px-3 py-2 mb-1">
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400">Our
+                                        Solutions</p>
+                                </div>
+                                <a href="solutions.html#containerized"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-primary/8 flex items-center justify-center shrink-0 text-primary group-hover/item:bg-primary group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Containerized
+                                            Cargo</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">20ft & 40ft
+                                            container transport</span>
+                                    </div>
+                                </a>
+                                <a href="solutions.html#petroleum"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-action/8 flex items-center justify-center shrink-0 text-action group-hover/item:bg-action group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Petroleum
+                                            Products</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">AGO, PMS, LPG &
+                                            HHK</span>
+                                    </div>
+                                </a>
+                                <a href="solutions.html#out-of-gauge"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-amber-500/10 flex items-center justify-center shrink-0 text-amber-600 group-hover/item:bg-amber-500 group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Out
+                                            of Gauge Cargo</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">Abnormal &
+                                            oversized loads</span>
+                                    </div>
+                                </a>
+                                <a href="solutions.html#dry-bulk"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-emerald-500/10 flex items-center justify-center shrink-0 text-emerald-600 group-hover/item:bg-emerald-500 group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Dry
+                                            Bulk Cargo</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">Grain, clinker &
+                                            aggregates</span>
+                                    </div>
+                                </a>
+                                <a href="solutions.html#project-logistics"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-purple-500/10 flex items-center justify-center shrink-0 text-purple-600 group-hover/item:bg-purple-500 group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Project
+                                            Logistics</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">End-to-end project
+                                            cargo</span>
+                                    </div>
+                                </a>
+                                <a href="solutions.html#humanitarian"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-sky-500/10 flex items-center justify-center shrink-0 text-sky-600 group-hover/item:bg-sky-500 group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Humanitarian
+                                            Logistics</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">Relief & aid cargo
+                                            delivery</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company (Dropdown) -->
+                    <div class="relative group" id="company-dropdown">
+                        <button type="button"
+                            class="inline-flex items-center gap-1 px-4 py-2 text-sm  text-slate-600 hover:text-primary transition-colors duration-200"
+                            aria-expanded="false" aria-haspopup="true">
+                            Company
+                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-primary transition-all duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Panel -->
+                        <div
+                            class="dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div
+                                class="w-[280px] bg-white rounded-xl shadow-2xl shadow-slate-900/10 border border-slate-100 p-2 ring-1 ring-black/[0.03]">
+                                <div class="px-3 py-2 mb-1">
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400">Our
+                                        Company</p>
+                                </div>
+                                <a href="company.html#about"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-primary/8 flex items-center justify-center shrink-0 text-primary group-hover/item:bg-primary group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">About
+                                            Us</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">Our story, mission
+                                            & values</span>
+                                    </div>
+                                </a>
+                                <a href="company.html#health-safety"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-emerald-500/10 flex items-center justify-center shrink-0 text-emerald-600 group-hover/item:bg-emerald-500 group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Health
+                                            & Safety</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">HSE commitment &
+                                            standards</span>
+                                    </div>
+                                </a>
+                                <a href="company.html#quality-policy"
+                                    class="flex items-center gap-3 px-3 py-2.5 rounded-sm hover:bg-slate-50 transition-colors group/item">
+                                    <span
+                                        class="w-9 h-9 rounded-sm bg-accent/10 flex items-center justify-center shrink-0 text-accent group-hover/item:bg-accent group-hover/item:text-white transition-all duration-200">
+                                        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span
+                                            class="block text-[13px]  text-slate-800 group-hover/item:text-primary transition-colors">Quality
+                                            Policy</span>
+                                        <span class="block text-[11px] text-slate-400 leading-tight">ISO 9001:2015
+                                            framework</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <a href="contact_us.html"
+                        class="px-4 py-2 text-sm  text-slate-600 hover:text-primary transition-colors duration-200">
+                        Contact Us
+                    </a>
+                </nav>
+
+                <!-- CTA Button (Desktop) -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="contact_us.html" id="nav-cta"
+                        class="bg-action hover:bg-action-hover text-white px-6 py-2.5 text-sm font-bold transition-all duration-200 hover:-translate-y-px">
+                        Get a Quote
+                    </a>
+                </div>
+
+                <!-- ─── Mobile Menu Toggle ─── -->
+                <button id="mobile-menu-btn" type="button"
+                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    aria-label="Toggle navigation menu" aria-expanded="false">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- ─── Mobile Navigation Panel ─── -->
+        <div id="mobile-menu"
+            class="lg:hidden hidden border-t border-slate-100 bg-white shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-4 pt-3 pb-5 space-y-0.5">
+
+                <!-- Home -->
+                <a href="index.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm  text-primary bg-primary/5 border border-primary/10">
+                    <span class="w-1.5 h-1.5 rounded-full bg-action"></span>
+                    Home
+                </a>
+
+                <!-- Solutions Accordion -->
+                <div>
+                    <button type="button"
+                        class="mobile-accordion-btn w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm  text-slate-700 hover:bg-slate-50 transition-colors"
+                        aria-expanded="false">
+                        <span class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                            Solutions
+                        </span>
+                        <svg class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-accordion-panel hidden pl-8 pr-2 pb-1 space-y-0.5 mt-1">
+                        <a href="solutions.html#containerized"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-primary">
+                            Containerized Cargo
+                        </a>
+                        <a href="solutions.html#petroleum"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-action">
+                            Petroleum Products
+                        </a>
+                        <a href="solutions.html#out-of-gauge"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-amber-500">
+                            Out of Gauge Cargo
+                        </a>
+                        <a href="solutions.html#dry-bulk"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-emerald-500">
+                            Dry Bulk Cargo
+                        </a>
+                        <a href="solutions.html#project-logistics"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-purple-500">
+                            Project Logistics
+                        </a>
+                        <a href="solutions.html#humanitarian"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-sky-500">
+                            Humanitarian Logistics
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company Accordion -->
+                <div>
+                    <button type="button"
+                        class="mobile-accordion-btn w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm  text-slate-700 hover:bg-slate-50 transition-colors"
+                        aria-expanded="false">
+                        <span class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                            Company
+                        </span>
+                        <svg class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-accordion-panel hidden pl-8 pr-2 pb-1 space-y-0.5 mt-1">
+                        <a href="company.html#about"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-primary">
+                            About Us
+                        </a>
+                        <a href="company.html#health-safety"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-emerald-500">
+                            Health & Safety
+                        </a>
+                        <a href="company.html#quality-policy"
+                            class="block px-4 py-2.5 rounded-lg text-[13px] text-slate-500 hover:text-primary hover:bg-primary/5 transition-colors border-l-2 border-transparent hover:border-accent">
+                            Quality Policy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <a href="contact_us.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm  text-slate-700 hover:bg-slate-50 transition-colors">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+                    Contact Us
+                </a>
+
+                <!-- Mobile CTA -->
+                <div class="pt-4 mt-2 border-t border-slate-100">
+                    <a href="contact_us.html"
+                        class="flex items-center justify-center gap-2 w-full bg-action hover:bg-action-hover text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-action/20">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                        Get a Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Contact Info -->
+                <div
+                    class="pt-4 mt-1 border-t border-slate-100 flex items-center justify-center gap-5 text-xs text-slate-400">
+                    <a href="tel:+254735535458" class="flex items-center gap-1.5 hover:text-primary transition-colors">
+                        <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        +254 735 535 458
+                    </a>
+                    <span class="w-px h-3 bg-slate-200"></span>
+                    <a href="mailto:info@ael.co.ke"
+                        class="flex items-center gap-1.5 hover:text-primary transition-colors">
+                        <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        info@ael.co.ke
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SLIDER
+         ═══════════════════════════════════════════════════════════ -->
+    <section id="hero" class="relative h-screen min-h-[600px] max-h-[900px] overflow-hidden bg-dark"
+        aria-label="Hero slider">
+
+        <!-- ── Slides Container ── -->
+        <div id="hero-slides" class="absolute inset-0">
+
+            <!-- Slide 1: Fleet Power -->
+            <div class="hero-slide active absolute inset-0" data-slide="0">
+                <div class="hero-bg absolute inset-0">
+                    <img src="./static/images/hero_fleet.png" alt="AEL truck fleet on East African highway"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <span
+                                class="inline-flex items-center rounded-full text-white text-xs tracking-wider uppercase mb-6">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent mr-2"></span>
+                                170+ Modern Trucks
+                            </span>
+                            <h1
+                                class="hero-title font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.08] mb-6">
+                                Powering Supply Chains Across
+                                <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">East
+                                    Africa</span>
+                            </h1>
+                            <p class="hero-desc text-base sm:text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+                                Industry-leading transport and logistics solutions. With a specialized fleet of over 170
+                                trucks, we deliver your cargo safely, on time, every time.
+                            </p>
+                            <div class="hero-ctas flex flex-col sm:flex-row gap-3">
+                                <a href="contact_us.html"
+                                    class="group bg-action hover:bg-action-hover text-white px-7 py-3.5 rounded-sm text-sm transition-all shadow-lg shadow-action/30 hover:shadow-xl hover:-translate-y-px inline-flex items-center justify-center gap-2">
+                                    Request a Quote
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                                <a href="solutions.html"
+                                    class="bg-white/10 hover:bg-white/15 backdrop-blur-sm text-white px-7 py-3.5 rounded-sm  text-sm transition-all border border-white/20 hover:border-white/40 inline-flex items-center justify-center">
+                                    Explore Solutions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Petroleum Transport -->
+            <div class="hero-slide absolute inset-0" data-slide="1">
+                <div class="hero-bg absolute inset-0">
+                    <img src="./static/images/hero_petroleum.png" alt="AEL petroleum tanker at fuel depot"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <span
+                                class="inline-flex items-center rounded-full text-white text-xs tracking-wider uppercase mb-6">
+                                <span class="w-1.5 h-1.5 rounded-full bg-action mr-2"></span>
+                                HAZMAT Certified
+                            </span>
+                            <h1
+                                class="hero-title font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.08] mb-6">
+                                Trusted Partners in
+                                <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-action to-amber-400">Petroleum
+                                    Logistics</span>
+                            </h1>
+                            <p class="hero-desc text-base sm:text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+                                Safe, compliant, and monitored transport of AGO, PMS, LPG, and HHK. Our specialized
+                                tanker fleet is equipped with the highest safety standards.
+                            </p>
+                            <div class="hero-ctas flex flex-col sm:flex-row gap-3">
+                                <a href="solutions.html#petroleum"
+                                    class="group bg-action hover:bg-action-hover text-white px-7 py-3.5 rounded-sm font-bold text-sm transition-all shadow-lg shadow-action/30 hover:shadow-xl hover:-translate-y-px inline-flex items-center justify-center gap-2">
+                                    Our Petroleum Services
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                                <a href="contact_us.html"
+                                    class="bg-white/10 hover:bg-white/15 backdrop-blur-sm text-white px-7 py-3.5 rounded-sm  text-sm transition-all border border-white/20 hover:border-white/40 inline-flex items-center justify-center">
+                                    Get a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Regional Reach -->
+            <div class="hero-slide absolute inset-0" data-slide="2">
+                <div class="hero-bg absolute inset-0">
+                    <img src="./static/images/hero_corridor.png" alt="East African transport corridor aerial view"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <span
+                                class="inline-flex items-center rounded-full text-white text-xs tracking-wider uppercase mb-6">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>
+                                5 Countries · 4 Offices
+                            </span>
+                            <h1
+                                class="hero-title font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.08] mb-6">
+                                Connecting Mombasa to the
+                                <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-accent">Heart
+                                    of Africa</span>
+                            </h1>
+                            <p class="hero-desc text-base sm:text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+                                With strategic offices in Mombasa, Nairobi, Kampala, and Juba, we seamlessly manage
+                                cross-border transits across Kenya, Uganda, South Sudan, Rwanda, and DRC.
+                            </p>
+                            <div class="hero-ctas flex flex-col sm:flex-row gap-3">
+                                <a href="company.html#about"
+                                    class="group bg-action hover:bg-action-hover text-white px-7 py-3.5 rounded-sm font-bold text-sm transition-all shadow-lg shadow-action/30 hover:shadow-xl hover:-translate-y-px inline-flex items-center justify-center gap-2">
+                                    About AEL
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                                <a href="contact_us.html"
+                                    class="bg-white/10 hover:bg-white/15 backdrop-blur-sm text-white px-7 py-3.5 rounded-sm  text-sm transition-all border border-white/20 hover:border-white/40 inline-flex items-center justify-center">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Safety & ISO -->
+            <div class="hero-slide absolute inset-0" data-slide="3">
+                <div class="hero-bg absolute inset-0">
+                    <img src="./static/images/hero_safety.png" alt="AEL fleet yard with safety inspection"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <span
+                                class="inline-flex items-center rounded-full text-white text-xs tracking-wider uppercase mb-6">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent mr-2"></span>
+                                ISO 9001:2015 Certified
+                            </span>
+                            <h1
+                                class="hero-title font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.08] mb-6">
+                                Certified Commitment to
+                                <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400">Operational
+                                    Excellence</span>
+                            </h1>
+                            <p class="hero-desc text-base sm:text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+                                Our ISO-certified quality management system ensures every delivery meets the highest
+                                standards of safety, reliability, and customer satisfaction.
+                            </p>
+                            <div class="hero-ctas flex flex-col sm:flex-row gap-3">
+                                <a href="company.html#quality-policy"
+                                    class="group bg-action hover:bg-action-hover text-white px-7 py-3.5 rounded-sm font-bold text-sm transition-all shadow-lg shadow-action/30 hover:shadow-xl hover:-translate-y-px inline-flex items-center justify-center gap-2">
+                                    Our Quality Policy
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                                <a href="contact_us.html"
+                                    class="bg-white/10 hover:bg-white/15 backdrop-blur-sm text-white px-7 py-3.5 rounded-sm  text-sm transition-all border border-white/20 hover:border-white/40 inline-flex items-center justify-center">
+                                    Partner With Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Slide Navigation Indicators ── -->
+        <div class="absolute bottom-8 left-0 right-0 z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+                <div id="hero-indicators" class="flex gap-2 max-w-[240px] w-full">
+                    <button class="hero-indicator group flex-1 py-1 focus:outline-none" data-index="0"
+                        aria-label="Go to slide 1">
+                        <div class="h-0.5 bg-white/20 rounded-full overflow-hidden">
+                            <div class="progress-bar h-full bg-white/60 rounded-full" style="animation-duration: 6s;">
+                            </div>
+                        </div>
+                    </button>
+                    <button class="hero-indicator group flex-1 py-1 focus:outline-none" data-index="1"
+                        aria-label="Go to slide 2">
+                        <div class="h-0.5 bg-white/20 rounded-full overflow-hidden">
+                            <div class="progress-bar h-full bg-white/60 rounded-full paused"
+                                style="animation-duration: 6s;"></div>
+                        </div>
+                    </button>
+                    <button class="hero-indicator group flex-1 py-1 focus:outline-none" data-index="2"
+                        aria-label="Go to slide 3">
+                        <div class="h-0.5 bg-white/20 rounded-full overflow-hidden">
+                            <div class="progress-bar h-full bg-white/60 rounded-full paused"
+                                style="animation-duration: 6s;"></div>
+                        </div>
+                    </button>
+                    <button class="hero-indicator group flex-1 py-1 focus:outline-none" data-index="3"
+                        aria-label="Go to slide 4">
+                        <div class="h-0.5 bg-white/20 rounded-full overflow-hidden">
+                            <div class="progress-bar h-full bg-white/60 rounded-full paused"
+                                style="animation-duration: 6s;"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Prev / Next Arrows ── -->
+        <button id="hero-prev" aria-label="Previous slide"
+            class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/15 flex items-center justify-center text-white transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent/50">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button id="hero-next" aria-label="Next slide"
+            class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/15 flex items-center justify-center text-white transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent/50">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+    </section>
+
+    <main>
+        <!-- ═══════════════════════════════════════════════════════════
+             ABOUT US (WHO WE ARE)
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="py-10 lg:py-16 bg-white overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    <!-- Text Content -->
+                    <div class="max-w-2xl">
+                        <div
+                            class="inline-flex items-center gap-2  text-slate-600 text-xs tracking-wider uppercase mb-6">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            Who We Are
+                        </div>
+                        <h2
+                            class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
+                            Driving East Africa's Logistics Since 2005
+                        </h2>
+                        <!-- Thick short accent line -->
+                        <div class="w-20 h-1.5 bg-accent mb-8"></div>
+
+                        <div class="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+                            <p>
+                                Backed by two decades of experience, Awale Enterprises Limited has built a stellar
+                                reputation offering efficient and competitively priced cargo transportation services
+                                across East Africa.
+                            </p>
+                            <p>
+                                From containerized cargo to complex out-of-gauge logistics, our services are backed by a
+                                robust, modern fleet of 172+ trucks, qualified staff, and unparalleled knowledge of the
+                                region. We are committed to safety, reliability, and delivering unmatched value to our
+                                partners.
+                            </p>
+                        </div>
+                        <a href="company.html#about"
+                            class="inline-flex items-center justify-center gap-2 text-action  hover:text-action-hover transition-colors group">
+                            Read Our Story
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Visual / Stats Highlight -->
+                    <div class="relative">
+                        <!-- Decorative bg block -->
+                        <div class="absolute -inset-4 bg-slate-50 transform -rotate-3 -z-10"></div>
+                        <div class="relative aspect-[4/3] overflow-hidden">
+                            <!-- Using a placeholder until actual images are provided -->
+                            <div class="w-full h-full bg-slate-800 relative">
+                                <!-- Temporary placeholder pattern -->
+                                <div class="absolute inset-0 opacity-20"
+                                    style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+                                </div>
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center text-white/50 font-display text-2xl tracking-widest uppercase">
+                                    AEL Fleet</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             OUR SOLUTIONS
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="py-10 lg:py-16 relative border-t border-slate-800 bg-slate-900 text-white overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="./static/images/AEL_Company_Profile-30.png" alt="AEL Logistics Operations"
+                    class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity">
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900/95"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+                    <div class="inline-flex items-center gap-2 text-slate-300 text-xs tracking-wider uppercase mb-6">
+                        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                        Our Solutions
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+                        Industry-leading transport capabilities
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        From the Port of Mombasa to the heart of East Africa, we provide tailored logistics solutions
+                        that guarantee safety, punctuality, and efficiency.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+                    <!-- Component: Containerized Cargo -->
+                    <a href="solutions.html#containerized"
+                        class="group relative h-full bg-white border border-slate-200 hover:border-primary transition-all duration-300 overflow-hidden text-left flex flex-col">
+                        <!-- Top Image Placeholder -->
+                        <div class="w-full h-36 bg-slate-200 relative overflow-hidden shrink-0">
+                            <div
+                                class="absolute inset-0 bg-primary/10 transition-colors duration-300 group-hover:bg-transparent">
+                            </div>
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: radial-gradient(#000000 1px, transparent 1px); background-size: 16px 16px;">
+                            </div>
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3
+                                    class="relative font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">
+                                    Containerized Cargo</h3>
+                                <p class="relative text-slate-500 text-sm leading-relaxed mb-6">
+                                    Efficient transport of 20ft and 40ft containers, with expert handling and strict
+                                    safety
+                                    protocols.
+                                </p>
+                            </div>
+                            <div class="relative flex items-center text-sm text-primary">
+                                Learn more
+                                <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Component: Petroleum Products -->
+                    <a href="solutions.html#petroleum"
+                        class="group relative h-full bg-white border border-slate-200 hover:border-action transition-all duration-300 overflow-hidden text-left flex flex-col">
+                        <!-- Top Image Placeholder -->
+                        <div class="w-full h-36 bg-slate-200 relative overflow-hidden shrink-0">
+                            <div
+                                class="absolute inset-0 bg-action/10 transition-colors duration-300 group-hover:bg-transparent">
+                            </div>
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: radial-gradient(#000000 1px, transparent 1px); background-size: 16px 16px;">
+                            </div>
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3
+                                    class="relative font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-action transition-colors">
+                                    Petroleum Products</h3>
+                                <p class="relative text-slate-500 text-sm leading-relaxed mb-6">
+                                    Safe transportation of fuels and gas
+                                    carried out by specialized, certified tankers and our most skilled drivers.
+                                </p>
+                            </div>
+                            <div class="relative flex items-center text-sm text-action">
+                                Learn more
+                                <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Component: Out of Gauge -->
+                    <a href="solutions.html#out-of-gauge"
+                        class="group relative h-full bg-white border border-slate-200 hover:border-amber-500 transition-all duration-300 overflow-hidden text-left flex flex-col">
+                        <!-- Top Image Placeholder -->
+                        <div class="w-full h-36 bg-slate-200 relative overflow-hidden shrink-0">
+                            <div
+                                class="absolute inset-0 bg-amber-500/10 transition-colors duration-300 group-hover:bg-transparent">
+                            </div>
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: radial-gradient(#000000 1px, transparent 1px); background-size: 16px 16px;">
+                            </div>
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3
+                                    class="relative font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">
+                                    Out of Gauge Cargo</h3>
+                                <p class="relative text-slate-500 text-sm leading-relaxed mb-6">
+                                    Specialized handling for abnormal and oversized loads, complete with route planning
+                                    and
+                                    permits.
+                                </p>
+                            </div>
+                            <div class="relative flex items-center text-sm text-amber-600">
+                                Learn more
+                                <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Component: Dry Bulk Cargo -->
+                    <a href="solutions.html#dry-bulk"
+                        class="group relative h-full bg-white border border-slate-200 hover:border-emerald-500 transition-all duration-300 overflow-hidden text-left flex flex-col">
+                        <!-- Top Image Placeholder -->
+                        <div class="w-full h-36 bg-slate-200 relative overflow-hidden shrink-0">
+                            <div
+                                class="absolute inset-0 bg-emerald-500/10 transition-colors duration-300 group-hover:bg-transparent">
+                            </div>
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: radial-gradient(#000000 1px, transparent 1px); background-size: 16px 16px;">
+                            </div>
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3
+                                    class="relative font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                                    Dry Bulk Cargo</h3>
+                                <p class="relative text-slate-500 text-sm leading-relaxed mb-6">
+                                    Dedicated tipper trucks and bulk carriers for grain, clinker, fertilizers, and
+                                    aggregates.
+                                </p>
+                            </div>
+                            <div class="relative flex items-center text-sm text-emerald-600">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="solutions.html"
+                        class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 hover:text-primary hover:border-primary/50 hover:bg-slate-50 px-8 py-3.5 font-bold text-sm transition-all">
+                        View All Transport Solutions
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════
+             BY THE NUMBERS (STATS STRIP)
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="py-16 lg:py-24 bg-primary relative overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center divide-x divide-white/10">
+
+                    <div class="px-4">
+                        <div class="font-stats text-4xl sm:text-5xl font-bold text-white mb-2">172<span
+                                class="text-accent">+</span></div>
+                        <div class="text-sm sm:text-base text-primary-200 text-white/70 tracking-wider font-semibold">
+                            Modern Trucks</div>
+                    </div>
+
+                    <div class="px-4">
+                        <div class="font-stats text-4xl sm:text-5xl font-bold text-white mb-2">5</div>
+                        <div class="text-sm sm:text-base text-primary-200 text-white/70 tracking-wider font-semibold">
+                            Countries Reached</div>
+                    </div>
+
+                    <div class="px-4">
+                        <div class="font-stats text-4xl sm:text-5xl font-bold text-white mb-2">143<span
+                                class="text-accent">+</span></div>
+                        <div class="text-sm sm:text-base text-primary-200 text-white/70 tracking-wider font-semibold">
+                            Expert Drivers</div>
+                    </div>
+
+                    <div class="px-4">
+                        <div class="font-stats text-4xl sm:text-5xl font-bold text-white mb-2">20</div>
+                        <div class="text-sm sm:text-base text-primary-200 text-white/70 tracking-wider font-semibold">
+                            Years Experience</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             WHY CHOOSE US
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="py-10 lg:py-16 bg-blue-50 relative border-t border-blue-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                    <!-- Left: Image placeholder -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-white transform rotate-2 -z-10"></div>
+                        <div class="aspect-[4/3] bg-slate-800 overflow-hidden relative">
+                            <div class="absolute inset-0 opacity-20"
+                                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center text-white/30 font-display text-2xl tracking-widest uppercase">
+                                AEL Operations</div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 tracking-wider uppercase mb-6 text-xs text-slate-600">
+                            <span class="w-1.5 h-1.5 bg-action"></span>
+                            Why Choose Us
+                        </div>
+                        <h2
+                            class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
+                            The Trusted Partner for East African Logistics
+                        </h2>
+                        <p class="text-slate-500 text-base leading-relaxed mb-8">
+                            For over two decades, AEL has been the preferred logistics partner for leading corporates,
+                            multinationals, and humanitarian agencies operating in East Africa.
+                        </p>
+
+                        <ul class="space-y-5 mb-10">
+                            <!-- Fleet -->
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-action/10 text-action flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-display font-bold text-slate-900 mb-0.5">Modern, Well-Maintained
+                                        Fleet</div>
+                                    <p class="text-sm text-slate-500">172+ trucks ranging from flatbeds and tankers to
+                                        out-of-gauge and container trucks, tracked in real-time.</p>
+                                </div>
+                            </li>
+                            <!-- Safety & Compliance -->
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-action/10 text-action flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-display font-bold text-slate-900 mb-0.5">Safety &amp; Compliance
+                                        First</div>
+                                    <p class="text-sm text-slate-500">ISO 9001:2015 certified. All drivers are trained,
+                                        licensed, and operate under strict HSSE protocols.</p>
+                                </div>
+                            </li>
+                            <!-- Regional Knowledge -->
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-action/10 text-action flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-display font-bold text-slate-900 mb-0.5">Deep Regional Knowledge
+                                    </div>
+                                    <p class="text-sm text-slate-500">Operations across Kenya, Uganda, South Sudan, and
+                                        the DRC. We know every corridor, every border.</p>
+                                </div>
+                            </li>
+                            <!-- 24/7 Support -->
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-action/10 text-action flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-display font-bold text-slate-900 mb-0.5">24/7 Operations &amp;
+                                        Support</div>
+                                    <p class="text-sm text-slate-500">Round-the-clock dispatch and real-time cargo
+                                        tracking to keep you informed at every step.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-4">
+                            <a href="company.html#fleet"
+                                class="bg-primary hover:bg-primary/90 text-white px-8 py-4 font-bold text-sm transition-all hover:-translate-y-px">
+                                View Our Fleet
+                            </a>
+                            <a href="solutions.html"
+                                class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-primary px-8 py-4 text-sm transition-all">
+                                Our Solutions
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════ -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+
+                <!-- Brand col -->
+                <div class="lg:col-span-1">
+                    <img src="./static/images/AEL_Logo.svg" alt="AEL Logo"
+                        class="h-12 mb-6 opacity-90 brightness-0 invert">
+                    <p class="text-sm leading-relaxed mb-6">
+                        Awale Enterprises Limited is a leading road freight transportation company offering logistics
+                        solutions across East & Central Africa since 2005.
+                    </p>
+                    <!-- Socials / Or ISO logo -->
+                    <div class="flex items-center gap-2">
+                        <span
+                            class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-slate-300 bg-slate-800 px-3 py-1.5 rounded border border-slate-700">ISO
+                            9001:2015</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-display font-bold mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="company.html#about" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="company.html#health-safety" class="hover:text-accent transition-colors">Health &
+                                Safety</a></li>
+                        <li><a href="company.html#quality-policy" class="hover:text-accent transition-colors">Quality
+                                Policy</a></li>
+                        <li><a href="company.html#fleet" class="hover:text-accent transition-colors">Our Fleet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h4 class="text-white font-display font-bold mb-6">Transport Solutions</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="solutions.html#containerized"
+                                class="hover:text-accent transition-colors">Containerized Cargo</a></li>
+                        <li><a href="solutions.html#petroleum" class="hover:text-accent transition-colors">Petroleum
+                                Products</a></li>
+                        <li><a href="solutions.html#out-of-gauge" class="hover:text-accent transition-colors">Out of
+                                Gauge Load</a></li>
+                        <li><a href="solutions.html#project-logistics"
+                                class="hover:text-accent transition-colors">Project Logistics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-display font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-action shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Mazeras, Off Msa-Nairobi Highway<br>P.O. Box 93125 (80102), Mombasa</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-action shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <a href="tel:+254735535458" class="hover:text-white transition-colors">+254 735 535 458</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-action shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:info@ael.co.ke"
+                                class="hover:text-white transition-colors">info@ael.co.ke</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom legal -->
+            <div
+                class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> Awale Enterprises Limited. All rights
+                    reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══ Combined JS: Nav + Hero Slider ═══ -->
+    <script>
+            (function () {
+                // ─────────────────────────────────────
+                //  Navigation Controller
+                // ─────────────────────────────────────
+                const nav = document.getElementById('main-nav');
+                const mobileBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const iconOpen = document.getElementById('menu-icon-open');
+                const iconClose = document.getElementById('menu-icon-close');
+
+                // Mobile menu toggle
+                mobileBtn.addEventListener('click', () => {
+                    const isOpen = !mobileMenu.classList.contains('hidden');
+                    mobileMenu.classList.toggle('hidden', isOpen);
+                    iconOpen.classList.toggle('hidden', !isOpen);
+                    iconClose.classList.toggle('hidden', isOpen);
+                    mobileBtn.setAttribute('aria-expanded', String(!isOpen));
+                });
+
+                // Mobile accordion toggles
+                document.querySelectorAll('.mobile-accordion-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const panel = btn.nextElementSibling;
+                        const chevron = btn.querySelector('svg');
+                        const isOpen = !panel.classList.contains('hidden');
+                        panel.classList.toggle('hidden', isOpen);
+                        chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+                        btn.setAttribute('aria-expanded', String(!isOpen));
+                    });
+                });
+
+                // Scroll shadow on nav
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            if (window.scrollY > 0) {
+                                nav.classList.add('shadow-md', 'backdrop-blur-md');
+                                nav.classList.remove('border-b');
+                            } else {
+                                nav.classList.remove('shadow-md', 'backdrop-blur-md');
+                                nav.classList.add('border-b');
+                            }
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+
+                // Close mobile menu on resize to desktop
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth >= 1024 && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        iconOpen.classList.remove('hidden');
+                        iconClose.classList.add('hidden');
+                        mobileBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // ─────────────────────────────────────
+                //  Hero Slider Controller
+                // ─────────────────────────────────────
+                const SLIDE_DURATION = 6000;       // ms per slide
+                const slides = document.querySelectorAll('.hero-slide');
+                const indicators = document.querySelectorAll('.hero-indicator');
+                const progressBars = document.querySelectorAll('.progress-bar');
+                const prevBtn = document.getElementById('hero-prev');
+                const nextBtn = document.getElementById('hero-next');
+                const heroSection = document.getElementById('hero');
+
+                let current = 0;
+                let autoTimer = null;
+                let isPaused = false;
+
+                function goToSlide(index, direction) {
+                    if (index === current) return;
+
+                    // Reset all progress bars
+                    progressBars.forEach((bar, i) => {
+                        bar.classList.add('paused');
+                        bar.style.width = '0';
+                        // Force reflow to restart animation
+                        void bar.offsetWidth;
+                    });
+
+                    // Remove active from current slide
+                    slides[current].classList.remove('active');
+
+                    // Update current
+                    current = index;
+
+                    // Activate new slide
+                    slides[current].classList.add('active');
+
+                    // Start progress bar for current
+                    progressBars[current].classList.remove('paused');
+                    progressBars[current].style.width = '';
+
+                    // Restart auto-advance timer
+                    restartTimer();
+                }
+
+                function nextSlide() {
+                    goToSlide((current + 1) % slides.length, 'next');
+                }
+
+                function prevSlide() {
+                    goToSlide((current - 1 + slides.length) % slides.length, 'prev');
+                }
+
+                function restartTimer() {
+                    clearTimeout(autoTimer);
+                    if (!isPaused) {
+                        autoTimer = setTimeout(nextSlide, SLIDE_DURATION);
+                    }
+                }
+
+                // Indicator clicks
+                indicators.forEach((btn, i) => {
+                    btn.addEventListener('click', () => goToSlide(i));
+                });
+
+                // Arrow clicks
+                prevBtn.addEventListener('click', prevSlide);
+                nextBtn.addEventListener('click', nextSlide);
+
+                // Pause on hover
+                heroSection.addEventListener('mouseenter', () => {
+                    isPaused = true;
+                    clearTimeout(autoTimer);
+                    progressBars[current].classList.add('paused');
+                });
+
+                heroSection.addEventListener('mouseleave', () => {
+                    isPaused = false;
+                    progressBars[current].classList.remove('paused');
+                    restartTimer();
+                });
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    // Only respond if hero is in viewport
+                    const rect = heroSection.getBoundingClientRect();
+                    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
+                    if (e.key === 'ArrowLeft') prevSlide();
+                    if (e.key === 'ArrowRight') nextSlide();
+                });
+
+                // Touch swipe support
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                heroSection.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                heroSection.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const diff = touchStartX - touchEndX;
+                    if (Math.abs(diff) > 60) {
+                        diff > 0 ? nextSlide() : prevSlide();
+                    }
+                }, { passive: true });
+
+                // Start the first auto-advance
+                restartTimer();
+            })();
+    </script>
+
 </body>
+
 </html>
